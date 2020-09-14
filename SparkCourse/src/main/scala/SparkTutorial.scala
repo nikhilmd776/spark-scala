@@ -10,7 +10,7 @@ object SparkTutorial {
     sc.setLogLevel("ERROR")
     Logger.getLogger("org").setLevel(Level.ERROR)
     val spark = SparkSession.builder().config(sc.getConf).getOrCreate()
-    val df = spark.read.csv("G:\\test.csv")
+    val df = spark.read.csv("F://spark-scala//SampleFiles//test.csv")
     df.show(false)
     val rdd = sc.parallelize(List(1,2,5,9))
     val x = rdd.map(x=>x*x)
