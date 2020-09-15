@@ -1,4 +1,4 @@
-import main.scala.SparkConnection
+package main.scala
 
 object SparkTutorial {
   def main (args:Array[String]):Unit = {
@@ -9,5 +9,8 @@ object SparkTutorial {
     val rdd = sc.parallelize(List(1,2,5,9))
     val x = rdd.map(x=>x*x)
     x.foreach(println)
+
+    val z = List(1,2,3).fold(1){_*_}
+    println(z)
   }
 }

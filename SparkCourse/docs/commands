@@ -1,0 +1,1 @@
+spark-submit --class main.scala.SparkTutorial --master local[2] F:\spark-scala\SparkCourse\target\SparkCourse-1.0-SNAPSHOT.jar
